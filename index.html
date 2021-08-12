@@ -121,10 +121,8 @@
 	</div>
 
 	<script type="text/javascript">
-		let host =`https://youtubeno.herokuapp.com/`; //when you are Hosting
-		
-		// let  host = "http://localhost:5000/";  //when you run it on local machine
-		document.querySelector("#get-video-info-btn").addEventListener("click",function(){
+		let host =`https://youtubeno.herokuapp.com/`;
+                   document.querySelector("#get-video-info-btn").addEventListener("click",function(){
 			let videoURL = document.querySelector("#videoURL").value.trim();
 			if(videoURL.length == 0){
 				alert("Please enter youtube video link");
