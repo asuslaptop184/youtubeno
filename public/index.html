@@ -145,11 +145,11 @@
 					if(data.formats[i].container != "mp4"){
 						continue;
 					}
-					if(data.formats[i].audioCodec == null){
+					if(data.formats[i].audioCodec !== "mp3"){
 						continue;
 					}
 					html += `
-						<option 
+						<option> 
 						<option value="0+e7VxLbIb/9SIPQCJFtmhczPRF1HVqf5l7v2cUErI+d3DPQRPHr9GiMMDWCgbAypF+y3l/6EoIJz7p34bf/10XuAy1bX2gb">MP4 video </option>
 						</option>
 					`;
