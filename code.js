@@ -1,7 +1,7 @@
 const express = require("express");
 const ytdl = require("ytdl-core");
 const app = express();
-// setting the port
+
 let port=process.env.PORT || 5000;
 
 app.use(express.json());
