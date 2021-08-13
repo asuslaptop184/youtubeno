@@ -150,15 +150,9 @@
 					}
 					html += `
 						
-						<option selected disabled>Select Video Formate</option>
-                  <option value="mp3">Mp3</option>
-                  <option value="mp4a">144 Mp4</option>
-                  <option value="360">360 Mp4</option>
-                  <option value="480">480 Mp4</option>
-                  <option value="720">720 Mp4</option>
-                  <option value="1080">1080 Mp4</option>
-                  <option value="4k">4k Mp4</option>
-                  <option value="8k">8k Mp4</option>
+						<option value="${data.formats[i].itag}|${data.formats[i].container}">
+							${data.formats[i].container} - ${data.formats[i].qualityLabel}
+						</option>
 						
 					`;
 					detailsNodes.thumbnail.src = data.videoDetails.thumbnails[data.videoDetails.thumbnails.length - 1].url; // get HD thumbnail img
